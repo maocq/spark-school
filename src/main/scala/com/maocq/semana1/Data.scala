@@ -9,8 +9,8 @@ trait Data extends SparkSessionWrapper {
     spark.sparkContext.setLogLevel("ERROR")
     val sc = spark.sparkContext
 
-    sc.hadoopConfiguration.set("fs.s3a.access.key", "AKIAIBXSZZ5DF56OT5WQ")
-    sc.hadoopConfiguration.set("fs.s3a.secret.key", "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")
+    sc.hadoopConfiguration.set("fs.s3a.access.key", "****************")
+    sc.hadoopConfiguration.set("fs.s3a.secret.key", "****************")
     spark.read
       .format("csv")
       .option("header", "true")
